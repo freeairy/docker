@@ -8,8 +8,6 @@ RUN wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz && tar -C /usr/loc
 
 ENV PATH=$PATH:/usr/local/go/bin:GOPATH=root/go
 
-RUN go version
-
 USER jenkins
 
 ENTRYPOINT ["jenkins-slave"]
